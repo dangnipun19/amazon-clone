@@ -2,7 +2,7 @@ import Header from "../app/components/Header"
 import {CheckCircleIcon} from "@heroicons/react/solid"
 import {useRouter} from "next/router"
 
-function success() {
+function Success() {
     const router = useRouter();
   return (
     <div className="bg-gray-100 h-screen">
@@ -15,7 +15,7 @@ function success() {
                     <h1 className="text-3xl">Thank you, your order has been confirmed!</h1>
                 </div>
                 <p>
-                    Thank you for shopping with us. We'll send a confirmation once your item has shipped, if you would like to check the status of your order(s) please press the link below.
+                    Thank you for shopping with us. We&#39;ll send a confirmation once your item has shipped, if you would like to check the status of your order(s) please press the link below.
                 </p>
                 <button className="button mt-8" onClick={()=>router.push("/orders")}>Go to my orders</button>
             </div>
@@ -24,4 +24,4 @@ function success() {
   )
 }
 
-export default success
+export default Success

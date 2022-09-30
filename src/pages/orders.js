@@ -3,12 +3,12 @@ import {useSession,getSession} from "next-auth/react"
 import moment from "moment/moment";
 import db from "../../firebase"
 import {doc,getDocs,collection} from 'firebase/firestore'
-import { useEffect } from "react";
+
 import Order from "../app/components/Order";
 
 
 
-function orders({orders}) {
+function Orders({orders}) {
     const {data:session} = useSession();
     // if(session){console.log(session)
     
@@ -47,7 +47,7 @@ function orders({orders}) {
   )
 }
 
-export default orders
+export default Orders
 
 export async function getServerSideProps(context){
 
